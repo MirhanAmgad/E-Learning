@@ -50,17 +50,15 @@
                     <ul class="navbar-nav mr-auto mt-md-0 ">
                         <!-- This is  -->
                         <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-                        
                     </ul>
                     <!-- ============================================================== -->
-                    <!-- User profile and search -->
+                    <!-- User profile and Logout -->
                     <!-- ============================================================== -->
                     <ul class="navbar-nav my-lg-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-address-book"></i> <u>Profile</u></a>
                         </li>
                         <li class="nav-item dropdown">
-                        
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-sign-out"></i> <u>Logout</u></a>
                         </li>
                     </ul>
@@ -86,7 +84,6 @@
                             <a href="#" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Define</a>
                         </li> 
                     </ul>
-                   
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
@@ -123,125 +120,164 @@
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
                 <!-- Row -->
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-      <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Student Name</th>
-      <th scope="col">Email</th>
-      <th scope="col">ID</th>
-      <th scope="col">Accept</th>
-      <th scope="col">Reject</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Ahmad Ali</th>
-      <td>ahmad@gmail.com</td>
-      <td>123</td>
-      <td><div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-info">Accept</button>
-                                        </div>
-                                    </div></td>
-                                    <td><div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-info">Reject</button>
-                                        </div>
-                                    </div></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td><td><div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-info">Accept</button>
-                                        </div>
-                                    </div></td>
-                                    <td><div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-info">Reject</button>
-                                        </div>
-                                    </div></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td><div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-info">Accept</button>
-                                        </div>
-                                    </div></td>
-                                    <td><div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-info">Reject</button>
-                                        </div>
-                                    </div></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td><div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-info">Accept</button>
-                                        </div>
-                                    </div></td>
-                                    <td><div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-info">Reject</button>
-                                        </div>
-                                    </div></td>
-    </tr>
-  </tbody>
-</table>
-  </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-       <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Student Name</th>
-      <th scope="col">Barecode</th>
-      <th scope="col">Group Name</th>
-      <th scope="col">Class Number</th>
-      <th scope="col">Date</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-   <th scope="row">Ahmad Ali</th>
-      <td>123456</td>
-      <td>Group A</td>
-      <td>205</td>
-      <td>1/09/2018</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@mdo</td>
-    </tr>
-  </tbody>
-</table>
-  </div>
-</div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-block">
+                              <!--Responsive Table-->
+                                <div class="table-responsive-sm">
+                                  <!--Start Table-->
+                                    <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Student Name</th>
+                                          <th scope="col">Email</th>
+                                          <th scope="col">ID</th>
+                                          <th scope="col">Accept</th>
+                                          <th scope="col">Reject</th>
+                                        </tr>
+                                      </thead>
+
+                                      <tbody>
+
+                                        <tr>
+                                          <td scope="row">Ahmad Ali</td>
+                                          <td>ahmad@gmail.com</td>
+                                          <td>123</td>
+                                          <td><div class="form-group row">
+                                              <div class="col-sm-12">
+                                              <button class="btn btn-info">Accept</button>
+                                              </div>
+                                              </div></td>
+                                          <td><div class="form-group row">
+                                              <div class="col-sm-12">
+                                              <button class="btn btn-info">Reject</button>
+                                              </div>
+                                              </div></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td scope="row">2</td>
+                                          <td>Jacob</td>
+                                          <td>Thornton</td>
+                                          <td><div class="form-group row">
+                                              <div class="col-sm-12">
+                                              <button class="btn btn-info">Accept</button>
+                                              </div>
+                                              </div></td>
+                                          <td><div class="form-group row">
+                                              <div class="col-sm-12">
+                                              <button class="btn btn-info">Reject</button>
+                                              </div>
+                                              </div></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td scope="row">3</td>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td><div class="form-group row">
+                                              <div class="col-sm-12">
+                                              <button class="btn btn-info">Accept</button>
+                                              </div>
+                                              </div></td>
+                                          <td><div class="form-group row">
+                                              <div class="col-sm-12">
+                                              <button class="btn btn-info">Reject</button>
+                                              </div>
+                                              </div></td>
+                                        </tr>
+
+                                        <tr>
+                                          <td scope="row">3</td>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td><div class="form-group row">
+                                              <div class="col-sm-12">
+                                              <button class="btn btn-info">Accept</button>
+                                              </div>
+                                              </div></td>
+                                          <td><div class="form-group row">
+                                              <div class="col-sm-12">
+                                              <button class="btn btn-info">Reject</button>
+                                              </div>
+                                              </div></td>
+                                        </tr>
+
+                                </tbody>
+                              </table>
+                              <!--End Table-->
+                                </div>
+                                <!--End Responsive-->
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-block">
+                              <!--Responsive Table-->
+                                <div class="table-responsive-sm">
+                                  <!--Start Table-->
+                                   <table class="table">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Student Name</th>
+                                          <th scope="col">Barecode</th>
+                                          <th scope="col">Group Name</th>
+                                          <th scope="col">Class Number</th>
+                                          <th scope="col">Date</th>
+                                        </tr>
+                                      </thead>
+
+                                      <tbody>
+
+                                        <tr>
+                                         <td scope="row">Ahmad Ali</td>
+                                            <td>123456</td>
+                                            <td>Group A</td>
+                                            <td>205</td>
+                                            <td>1/09/2018</td>
+                                        </tr>
+
+                                        <tr>
+                                          <td scope="row">2</td>
+                                          <td>Jacob</td>
+                                          <td>Thornton</td>
+                                          <td>@fat</td>
+                                          <td>@mdo</td>
+                                        </tr>
+
+                                        <tr>
+                                          <td scope="row">3</td>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>@mdo</td>
+                                        </tr>
+
+                                        <tr>
+                                          <td scope="row">3</td>
+                                          <td>Larry</td>
+                                          <td>the Bird</td>
+                                          <td>@twitter</td>
+                                          <td>@mdo</td>
+                                        </tr>
+
+                                     </tbody>
+                              </table>
+                              <!--End Table-->
+                                </div>
+                                <!--End Responsive-->
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+                             
+
+
                 <!-- Row -->
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->

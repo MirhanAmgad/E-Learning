@@ -63,7 +63,6 @@
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-address-book"></i> <u>Profile</u></a>
                         </li>
                         <li class="nav-item dropdown">
-                        
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-sign-out"></i> <u>Logout</u></a>
                         </li>
                     </ul>
@@ -83,10 +82,10 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li>
-                            <a href="#" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>Profile</a>
+                            <a href="#" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>Manage Pepole</a>
                         </li>
                         <li>
-                            <a href="#" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Basic Table</a>
+                            <a href="#" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Define</a>
                         </li> 
                     </ul>
                 </nav>
@@ -110,11 +109,7 @@
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-6 col-8 align-self-center">
-                        <h3 class="text-themecolor m-b-0 m-t-0">Student Dashboard</h3>
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Student Dashboard</li>
-                        </ol>
+                        <h3 class="text-themecolor m-b-0 m-t-0">Admin Dashboard</h3>
                     </div>
                 </div>
                 <!-- ============================================================== -->
@@ -123,6 +118,7 @@
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
+                <!--Start First Div-->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
@@ -132,65 +128,82 @@
                         </div>
                     </div>
                 </div>
+                <!--End first Div-->
+                 <!--Start Second Div-->
+                          <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-block">
+                                <h4 class="card-title">Student Number</h4>
+                                <div class="text-right">
+                                    <h2 class="font-light m-b-0"><i class="ti-arrow-up text-success"></i> 1200</h2>
+                                    <span class="text-muted">Total Student Number</span>
+                                </div>
+                                <span class="text-success">80%</span>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 80%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                    <!-- Column -->
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-block">
+                                <h4 class="card-title">Teacher Number</h4>
+                                <div class="text-right">
+                                    <h2 class="font-light m-b-0"><i class="ti-arrow-up text-info"></i> 50</h2>
+                                    <span class="text-muted">Total Teacher Number</span>
+                                </div>
+                                <span class="text-info">30%</span>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 30%; height: 6px;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Column -->
+                </div>
+                <!--End Second Div-->
+                <!--Start Third Div-->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-block">
-                                <!--First Tab-->
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                  <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Arabic</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">English</a>
-                                  </li>
-                                  <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Math</a>
-  </li>
-                                </ul>
-                                <!--End First Tab-->
-                                <!--Content Tab-->
-                           <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-      <div class="card" style="width: 18rem;">
-  <div class="card-header">
-    Group A
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item"><a href="#">Class 1</a></li>
-    <li class="list-group-item"><a href="#">Class 2</a></li>
-    <li class="list-group-item"><a href="#">Class 3</a></li>
-  </ul>
-</div>
-  </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-    <div class="card" style="width: 18rem;">
-  <div class="card-header">
-    Group B
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item"><a href="#">Class 1</a></li>
-    <li class="list-group-item"><a href="#">Class 2</a></li>
-    <li class="list-group-item"><a href="#">Class 3</a></li>
-  </ul>
-</div>
-  </div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-      <div class="card" style="width: 18rem;">
-  <div class="card-header">
-    Group c
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item"><a href="#">Class 1</a></li>
-    <li class="list-group-item"><a href="#">Class 2</a></li>
-    <li class="list-group-item"><a href="#">Class 3</a></li>
-  </ul>
-</div>
-  </div>
-</div>
-<!--End Content Tab-->
-
-                    </div>
+                                <!--Responsive Table-->
+                                 <div class="table-responsive-sm">
+                                          <table class="table">
+                                            <!--Start Table-->
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Room Number</th>
+                                          <th scope="col">Subject</th>
+                                          <th scope="col">Teacher Name</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <td scope="row">101</td>
+                                          <td>Arabic</td>
+                                          <td>Yasser</td>
+                                        </tr>
+                                        <tr>
+                                          <td scope="row">102</td>
+                                          <td>Math</td>
+                                          <td>Marwan</td>
+                                        </tr>
+                                        <tr>
+                                          <td scope="row">103</td>
+                                          <td>English</td>
+                                          <td>Ali</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    <!--End Table-->
+                                        </div>
+                                        <!--End Responsive Table-->
+                                        </div>
                 </div>
             </div>
         </div>

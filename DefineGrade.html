@@ -17,8 +17,6 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
     <link href="css/colors/blue.css" id="theme" rel="stylesheet">
-    
-   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">-->
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -44,6 +42,7 @@
         <!-- ============================================================== -->
         <header class="topbar">
             <nav class="navbar top-navbar navbar-toggleable-sm navbar-light">
+                
                 <div class="navbar-collapse">
                     <!-- ============================================================== -->
                     <!-- toggle and nav items -->
@@ -51,14 +50,12 @@
                     <ul class="navbar-nav mr-auto mt-md-0 ">
                         <!-- This is  -->
                         <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        
                     </ul>
                     <!-- ============================================================== -->
-                    <!-- User profile,Notification and Logout -->
+                    <!-- User profile and search -->
                     <!-- ============================================================== -->
                     <ul class="navbar-nav my-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell"></i> <u>Notification</u></a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-address-book"></i> <u>Profile</u></a>
                         </li>
@@ -76,17 +73,17 @@
         <!-- ============================================================== -->
         <!-- Left Sidebar - style you can find in sidebar.scss  -->
         <!-- ============================================================== -->
-        <aside class="left-sidebar">
+         <aside class="left-sidebar">
             <!-- Sidebar scroll-->
             <div class="scroll-sidebar">
                 <!-- Sidebar navigation-->
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li>
-                            <a href="#" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>Profile</a>
+                            <a href="#" class="waves-effect"><i class="fa fa-user m-r-10" aria-hidden="true"></i>Manage Pepole</a>
                         </li>
                         <li>
-                            <a href="#" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Basic Table</a>
+                            <a href="#" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Define</a>
                         </li> 
                     </ul>
                 </nav>
@@ -100,100 +97,123 @@
         <!-- ============================================================== -->
         <!-- Page wrapper  -->
         <!-- ============================================================== -->
-        <div class="page-wrapper" >
+        <div class="page-wrapper">
             <!-- ============================================================== -->
             <!-- Container fluid  -->
             <!-- ============================================================== -->
-            <div class="container-fluid" >
+            <div class="container-fluid">
                 <!-- ============================================================== -->
                 <!-- Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
                 <div class="row page-titles">
                     <div class="col-md-6 col-8 align-self-center">
-                        <h3 class="text-themecolor m-b-0 m-t-0">Student Dashboard</h3>
+                        <h3 class="text-themecolor m-b-0 m-t-0">Define Grade</h3>
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Student Dashboard</li>
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                            <li class="breadcrumb-item active">Define Grade</li>
                         </ol>
                     </div>
                 </div>
+
+                <!-- Filter Form--> 
+                 <form class="form-inline">
+                     <!-- Grade Filter-->
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <label class="sr-only" for="inlineFormInputGroup">Grade</label>
+                        <input type="text" id="inlineFormInputGroup" placeholder="Grade">
+                        <button type="submit"><i class="ti-search"></i></button>
+                    </div>
+                     <!-- Grade Level Filter-->
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <label class="sr-only" for="inlineFormInputGroup">Grade Level</label>
+                        <input type="text" id="inlineFormInput1" placeholder="Grade Level">
+                        <button type="submit"><i class="ti-search"></i></button>
+                    </div>
+                </form>
+                    <br>
+                    <!-- New link-->
+                    <div><a href="#">Create New</a></div>
+                    <br>
                 <!-- ============================================================== -->
                 <!-- End Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
+                <!-- Row -->
                 <div class="row">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-block">
-                                <P>Welcome to E-Learning</P>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-block">
-                                <!--First Tab-->
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                  <li class="nav-item">
-                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Arabic</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">English</a>
-                                  </li>
-                                  <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Math</a>
-  </li>
-                                </ul>
-                                <!--End First Tab-->
-                                <!--Content Tab-->
-                           <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-      <div class="card" style="width: 18rem;">
-  <div class="card-header">
-    Group A
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item"><a href="#">Class 1</a></li>
-    <li class="list-group-item"><a href="#">Class 2</a></li>
-    <li class="list-group-item"><a href="#">Class 3</a></li>
-  </ul>
-</div>
-  </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-    <div class="card" style="width: 18rem;">
-  <div class="card-header">
-    Group B
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item"><a href="#">Class 1</a></li>
-    <li class="list-group-item"><a href="#">Class 2</a></li>
-    <li class="list-group-item"><a href="#">Class 3</a></li>
-  </ul>
-</div>
-  </div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-      <div class="card" style="width: 18rem;">
-  <div class="card-header">
-    Group c
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item"><a href="#">Class 1</a></li>
-    <li class="list-group-item"><a href="#">Class 2</a></li>
-    <li class="list-group-item"><a href="#">Class 3</a></li>
-  </ul>
-</div>
-  </div>
-</div>
-<!--End Content Tab-->
+                                <!-- Responsive Table-->
+                                <div class="table-responsive-sm">
+                                    <!--Start Table-->
+                                  <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col">Grade</th>
+                                  <th scope="col">Grade Level</th>
+                                  <th scope="col">Edit</th>
+                                  <th scope="col">Delete</th>
+                                </tr>
+                              </thead>
+                              <tbody>
 
-                    </div>
+                                <tr>
+                                  <td scope="row">Junior</td>
+                                  <td>One</td>
+                                  <td><div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <button class="btn btn-info">Edit</button>
+                                        </div>
+                                        </div></td>
+                                    <td><div class="form-group row">
+                                        <div class="col-sm-12">
+                                            <button class="btn btn-info">Delete</button>
+                                        </div>
+                                        </div></td>
+                                </tr>
+
+                                <tr>
+                                  <td scope="row">Prep</td>
+                                  <td>Two</td>
+                                  <td><div class="form-group row">
+                                      <div class="col-sm-12">
+                                        <button class="btn btn-info">Edit</button>
+                                      </div>
+                                      </div></td>
+                                  <td><div class="form-group row">
+                                       <div class="col-sm-12">
+                                         <button class="btn btn-info">Delete</button>
+                                        </div>
+                                        </div></td>
+                                </tr>
+
+                                <tr>
+                                  <td scope="row">Senior</td>
+                                  <td>Three</td>
+                                  <td><div class="form-group row">
+                                       <div class="col-sm-12">
+                                         <button class="btn btn-info">Edit</button>
+                                        </div>
+                                        </div></td>
+
+                                  <td><div class="form-group row">
+                                      <div class="col-sm-12">
+                                        <button class="btn btn-info">Delete</button>
+                                        </div>
+                                        </div></td>
+                                </tr>
+
+                              </tbody>
+                            </table>
                 </div>
             </div>
         </div>
+               </div>
+                    <!-- Column -->
+                </div>
+                <!-- Row -->
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
@@ -204,6 +224,7 @@
             <!-- ============================================================== -->
             <!-- footer -->
             <!-- ============================================================== -->
+            
             <footer class="footer text-center">
                 © 2018 E-Leraring
             </footer>

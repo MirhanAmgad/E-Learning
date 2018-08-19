@@ -53,7 +53,7 @@
                         
                     </ul>
                     <!-- ============================================================== -->
-                    <!-- User profile and search -->
+                    <!-- User profile and Logout -->
                     <!-- ============================================================== -->
                     <ul class="navbar-nav my-lg-0">
                         <li class="nav-item dropdown">
@@ -86,7 +86,6 @@
                             <a href="#" class="waves-effect"><i class="fa fa-table m-r-10" aria-hidden="true"></i>Define</a>
                         </li> 
                     </ul>
-                   
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
@@ -116,151 +115,194 @@
                         </ol>
                     </div>
                 </div>
-
-
-                <form class="form-inline">
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                        <label class="sr-only" for="inlineFormInputGroup">Student Name</label>
-                        <input type="text" id="inlineFormInput" placeholder="Student Name">
-                        <button type="submit"><i class="ti-search"></i></button>
-                    </div>
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                        <label class="sr-only" for="inlineFormInputGroup">Email</label>
-                        <input type="text" id="inlineFormInput" placeholder="Email">
-                        <button type="submit"><i class="ti-search"></i></button>
-                    </div>
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                        <label class="sr-only" for="inlineFormInputGroup">Phone Number</label>
-                        <input type="text" id="inlineFormInput" placeholder="Phone Number">
-                        <button type="submit"><i class="ti-search"></i></button>
-                    </div>
-                </form>
-<br>
                 <!-- ============================================================== -->
                 <!-- End Bread crumb and right sidebar toggle -->
                 <!-- ============================================================== -->
+                <!--Start Filters-->
+                <form class="form-inline">
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <label class="sr-only" for="inlineFormInputGroup1">Student Name</label>
+                        <input type="text" id="inlineFormInputGroup1" placeholder="Student Name">
+                        <button type="submit"><i class="ti-search"></i></button>
+                    </div>
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <label class="sr-only" for="inlineFormInputGroup2">Email</label>
+                        <input type="text" id="inlineFormInputGroup2" placeholder="Email">
+                        <button type="submit"><i class="ti-search"></i></button>
+                    </div>
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <label class="sr-only" for="inlineFormInputGroup3">Phone Number</label>
+                        <input type="text" id="inlineFormInputGroup3" placeholder="Phone Number">
+                        <button type="submit"><i class="ti-search"></i></button>
+                    </div>
+                </form>
+                <!--End Filters-->
+
+<br>
+                
                 <!-- ============================================================== -->
                 <!-- Start Page Content -->
                 <!-- ============================================================== -->
                 <!-- Row -->
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Manual</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Autamtic</a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-      <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Student Name</th>
-      <th scope="col">Barecode</th>
-      <th scope="col">Group Name</th>
-      <th scope="col">Class Number</th>
-      <th scope="col">Date</th>
-      <th scope="col">Check In</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Ahmad Ali</th>
-      <td>123456</td>
-      <td>Group A</td>
-      <td>205</td>
-      <td>1/09/2018</td>
-      <td><div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-info">Check In</button>
-                                        </div>
-                                    </div></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>@mdo</td>
-      <td><div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-info">Check In</button>
-                                        </div>
-                                    </div></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@mdo</td>
-      <td><div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-info">Check In</button>
-                                        </div>
-                                    </div></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@mdo</td>
-      <td><div class="form-group row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-info">Check In</button>
-                                        </div>
-                                    </div></td>
-    </tr>
-  </tbody>
-</table>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-block">
+                              <!--Start Tab-->
+                              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Manual</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Autamtic</a>
+                </li>
+              </ul>
+              <!--End Tab-->
+              <!--Tabs content-->
+                <div class="tab-content" id="myTabContent">
+                  <!--First Tab-->
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <!--Responsive Table-->
+                     <div class="table-responsive-sm">
+                    <!-- Start Table-->
+                      <table class="table">
+
+                        <thead>
+                          <tr>
+                            <th scope="col">Student Name</th>
+                            <th scope="col">Barecode</th>
+                            <th scope="col">Group Name</th>
+                            <th scope="col">Class Number</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Check In</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+
+                          <tr>
+                            <td scope="row">Ahmad Ali</td>
+                            <td>123456</td>
+                            <td>Group A</td>
+                            <td>205</td>
+                            <td>1/09/2018</td>
+                            <td><div class="form-group row">
+                                <div class="col-sm-12">
+                                <button class="btn btn-info">Check In</button>
+                                </div>
+                                </div></td>
+                          </tr>
+
+                          <tr>
+                            <td scope="row">2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td>@mdo</td>
+                            <td><div class="form-group row">
+                                <div class="col-sm-12">
+                                <button class="btn btn-info">Check In</button>
+                                </div>
+                                </div></td>
+                          </tr>
+
+                          <tr>
+                            <td scope="row">3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@mdo</td>
+                            <td><div class="form-group row">
+                                <div class="col-sm-12">
+                                <button class="btn btn-info">Check In</button>
+                                </div>
+                                </div></td>
+                          </tr>
+
+                          <tr>
+                            <td scope="row">3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td>@mdo</td>
+                            <td><div class="form-group row">
+                                <div class="col-sm-12">
+                                <button class="btn btn-info">Check In</button>
+                                </div>
+                                </div></td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                      <!--End Table-->
+                    </div>
+                    <!-- End Responsive-->
   </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-       <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Student Name</th>
-      <th scope="col">Barecode</th>
-      <th scope="col">Group Name</th>
-      <th scope="col">Class Number</th>
-      <th scope="col">Date</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-   <th scope="row">Ahmad Ali</th>
-      <td>123456</td>
-      <td>Group A</td>
-      <td>205</td>
-      <td>1/09/2018</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@mdo</td>
-    </tr>
-  </tbody>
-</table>
+  <!--End First Tab-->
+  <!-- Second Tab-->
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <!--Responsive Table-->
+                                       <div class="table-responsive-sm">
+                                      <!-- Start Table-->
+                                      <table class="table">
+
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Student Name</th>
+                                            <th scope="col">Barecode</th>
+                                            <th scope="col">Group Name</th>
+                                            <th scope="col">Class Number</th>
+                                            <th scope="col">Date</th>
+                                          </tr>
+                                        </thead>
+
+                                        <tbody>
+
+                                          <tr>
+                                            <td scope="row">Ahmad Ali</td>
+                                            <td>123456</td>
+                                            <td>Group A</td>
+                                            <td>205</td>
+                                            <td>1/09/2018</td>
+                                          </tr>
+
+                                          <tr>
+                                            <td scope="row">2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                            <td>@mdo</td>
+                                          </tr>
+
+                                          <tr>
+                                            <td scope="row">3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                            <td>@mdo</td>
+                                          </tr>
+
+                                          <tr>
+                                            <td scope="row">3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                            <td>@mdo</td>
+                                          </tr>
+
+                                        </tbody>
+                                       </table>
+                      <!--End Table-->
+                    </div>
+                    <!-- End Responsive-->
   </div>
-</div>
-                <!-- Row -->
+  <!--End Second Tab-->
+                </div>
+                <!--End Tabs content-->
+              </div>
+            </div>
+          </div>
+        </div>
                 <!-- ============================================================== -->
                 <!-- End PAge Content -->
                 <!-- ============================================================== -->
